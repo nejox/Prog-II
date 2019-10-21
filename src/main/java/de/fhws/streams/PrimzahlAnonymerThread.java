@@ -4,6 +4,7 @@ public class PrimzahlAnonymerThread {
 	public static void main(String[] args) {
 		int zahlZumTesten = 633910099;
 		Thread t1 = new Thread() {
+			@Override
 			public void run() {
 				boolean istPrimzahl = false;
 				if (zahlZumTesten < 2)
@@ -21,6 +22,7 @@ public class PrimzahlAnonymerThread {
 		class LocalClassThread extends Thread {
 			boolean istPrimzahl;
 
+			@Override
 			public void run() {
 				if (zahlZumTesten < 2)
 					istPrimzahl = false;

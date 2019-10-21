@@ -2,6 +2,7 @@ package übung14;
 
 public class Roboter extends Entscheidungsträger {
 
+	@Override
 	public Entscheidungen entscheide(Gefahren gefahr) {
 		if (gefahr == Gefahren.GEFAHR_LINKS) {
 			this.entscheidung = Entscheidungen.RECHTS;

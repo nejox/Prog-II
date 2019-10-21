@@ -17,6 +17,7 @@ public class PrimzahlThread extends Thread {
 		return true;
 	}
 
+	@Override
 	public void run() {
 		boolean istPrimzahl = testeObPrimzahl();
 		ergebnis = zahlZumTesten + " ist " + (istPrimzahl ? "eine " : "keine ") + "Primzahl.";

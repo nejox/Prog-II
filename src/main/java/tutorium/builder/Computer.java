@@ -19,6 +19,7 @@ public class Computer {
 		for (int i = 0; i < kernAnzahl; i++) {
 			new Thread() {
 
+				@Override
 				public void run() {
 					try {
 						Thread.sleep(bs.sleepTime);

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.Consumer;
 
 public class Mannschaft implements Comparable<Mannschaft> {
 	String name;
@@ -129,6 +128,7 @@ public class Mannschaft implements Comparable<Mannschaft> {
 
 		System.out.println(liste.stream().max(new Comparator<Mannschaft>() {
 
+			@Override
 			public int compare(Mannschaft o1, Mannschaft o2) {
 				return o1.gegentore - o2.gegentore;
 			}

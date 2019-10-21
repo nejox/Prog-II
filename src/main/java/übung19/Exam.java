@@ -27,6 +27,7 @@ public class Exam implements ReadQuestions, ToTest {
 
 	}
 
+	@Override
 	public ToTest readQuestions(String path) throws IOException {
 		try (BufferedReader bR = new BufferedReader(new FileReader(path));) {
 			while (bR.ready()) {
@@ -44,6 +45,7 @@ public class Exam implements ReadQuestions, ToTest {
 		return this;
 	}
 
+	@Override
 	public void toTest(String path) throws IOException {
 		try (BufferedWriter bW = new BufferedWriter(new FileWriter(path));) {
 

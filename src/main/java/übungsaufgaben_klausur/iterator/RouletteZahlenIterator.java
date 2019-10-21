@@ -25,6 +25,7 @@ public class RouletteZahlenIterator implements Iterator<Integer> {
 		return number;
 	}
 
+	@Override
 	public void remove() {
 		throw new UnsupportedOperationException("remove");
 	}

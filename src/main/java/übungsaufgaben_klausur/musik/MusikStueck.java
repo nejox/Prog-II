@@ -35,6 +35,7 @@ public class MusikStueck {
 		this.laenge = laenge;
 	}
 
+	@Override
 	public String toString() {
 		return "Musikstück mit Titel " + titel + " von " + interpret + " dauert " + laenge + " Sekunden";
 	}

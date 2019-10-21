@@ -1,7 +1,6 @@
 package übung15;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Exceptions {

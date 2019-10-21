@@ -14,12 +14,14 @@ public class ToUpperCaseWriter extends Writer {
 		os.write(Character.toUpperCase(c));
 	}
 
+	@Override
 	public void write(char[] cbuf, int off, int len) throws IOException {
 		for (int i = off; i < off + len; i++) {
 			write(cbuf[i]);
 		}
 	}
 
+	@Override
 	public void write(String str, int off, int len) throws IOException {
 		for (int i = off; i < off + len; i++) {
 			write(str.charAt(i));
@@ -28,10 +30,12 @@ public class ToUpperCaseWriter extends Writer {
 
 	// alle (relevanten) Methoden von Writer überschreiben
 
+	@Override
 	public void flush() throws IOException {
 		os.flush();
 	}
 
+	@Override
 	public void close() throws IOException {
 		os.close();
 	}

@@ -1,9 +1,7 @@
 package altklausur_SS17;
 
-import static org.junit.Assert.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.hamcrest.core.Is;
 import org.junit.Rule;
 import org.junit.rules.ExpectedException;
 import org.junit.jupiter.api.Test;

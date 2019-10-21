@@ -2,9 +2,7 @@ package übung18;
 
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
 
 public class Vokabeltrainer {
 	Map<String, HashSet<String>> english2German = new HashMap<>();

@@ -13,6 +13,7 @@ public class Haus implements Comparable<Haus>, Iterable<Raum> {
 		this.adresse = adresse;
 	}
 
+	@Override
 	public String toString() {
 		return "Haus: " + adresse + " mit " + getQuadratmeterSumme() + " m²";
 	}

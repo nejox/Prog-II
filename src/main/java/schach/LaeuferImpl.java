@@ -5,6 +5,7 @@ public class LaeuferImpl extends AbstractFigur implements Laeufer {
 		super(x, y);
 	}
 
+	@Override
 	public Brett gibErlaubteFelder() {
 		Brett brett = new Brett();
 

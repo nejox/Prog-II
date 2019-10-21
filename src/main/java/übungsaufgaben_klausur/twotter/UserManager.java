@@ -1,17 +1,13 @@
 package übungsaufgaben_klausur.twotter;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import javax.management.RuntimeErrorException;
 
 public class UserManager {
 

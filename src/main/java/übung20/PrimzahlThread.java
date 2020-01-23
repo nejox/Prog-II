@@ -42,10 +42,11 @@ public class PrimzahlThread extends Thread {
 		PrimzahlThread pt1 = new PrimzahlThread(shit);
 		pt1.start();
 		
-		shit = new ArrayList<>();
-		shit.add(7);
-		shit.add(55);
-		PrimzahlThread pt2 = new PrimzahlThread(shit);
+		ArrayList<Integer> shit2 = new ArrayList<>();
+		shit2.add(7);
+		shit2.add(5);
+		shit2.add(55);
+		PrimzahlThread pt2 = new PrimzahlThread(shit2);
 		pt2.start();
 		try {
 			pt1.join();
